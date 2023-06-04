@@ -1,0 +1,169 @@
+*{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+body{
+    background-color: #60646B;
+}
+.tdiv .titre{
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Bangers';
+}
+.bcontainer{
+    float: right;
+    position: relative;
+}
+.top .bcontainer{
+    text-align: right;
+}
+.tdiv{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    position: relative;
+    overflow: hidden;
+    background-color:#2C73E6;
+}
+.tdiv h1 {
+    padding: 27px;
+    position: relative;
+}
+.tdiv .logo{
+    padding: 0;
+    font-weight: 600;
+    font-family:'Bangers';
+    display: inline;
+}
+.tdiv .btn.btn-outline-dark{
+    position: relative;
+    margin: 1rem;
+    background-color: white;
+}
+.top .btn.btn-outline-dark{
+    position: relative;
+    margin: 0rem;
+    text-align: right;
+}
+.tdiv .text{
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    grid-column: 2/3;
+}
+/*.tdiv:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    background-image: url(livre2.png);
+    background-repeat: no-repeat;
+    background-position: -15% 50%;
+    background-size:contain;
+}*/
+.top{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.recherche{
+    position: absolute;
+    margin: 1rem;
+    grid-column: 3/4;
+    float: right;
+}
+#recherche{
+    text-align: center;
+    position: relative;
+}
+.cover{
+    margin: 3% 10%;
+    display: inline-block;
+    filter: drop-shadow(.3rem .3rem 1rem black);
+}
+.textresum{
+    display: inline;
+}
+.topcarousel{
+    margin: 0;
+    font-size: 1.2rem;
+}
+.carousel.slide{
+    transition-property:background-color;
+    transition-duration: 1s;
+    height: 15rem;
+    border: 1px solid black;
+    background-color:#73A1EB;
+}
+.carousel.slide:hover{
+    background-color: white;
+}
+.topcarousel{
+    text-align: center;
+}
+.profil{
+    text-align:center;
+}
+#contcritique{
+    height: 600px;
+    display: grid;
+    overflow:scroll;
+    grid-template-rows: repeat(6,250px);
+    background-color: #73A1EB;
+}
+#critique{
+    border: 1px solid black;
+}
+@media screen and (min-width: 1024px){
+    .tdiv{
+        height: 25;
+    }
+    .bdiv{
+        width: 70%;
+        margin: 0 auto;
+        align-self: center;
+    }
+    .tdiv .text{
+        font-size: 1.5rem;
+    }
+    .tdiv:before{
+        opacity: 0.3;
+    }
+    .profil{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-align:right;
+        margin-top: 5%;
+    }
+    .profil .resume{
+        grid-column: 2/3;
+        grid-row: 2;
+        align-self: flex-end;
+        margin-bottom: 1rem;
+    }
+    .profil .couverture{
+        grid-column: 3/4;
+        margin: 0 33%;
+        
+    }
+    .profil .titrel{
+        grid-column: 3/4;
+        grid-row: 1;
+        text-align: center;
+    }
+    .profil .infos{
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+    .carousel.slide{
+        transition-property:background-color;
+        transition-duration: 1s;
+        height: 15rem;
+        border: 1px solid black;
+        background-color:#73A1EB;
+        box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+}
+ 
